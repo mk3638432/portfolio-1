@@ -1,5 +1,6 @@
+import Link from 'next/link'
 import React from 'react'
-import { FaInstagram, FaLinkedin, FaTwitch, FaTwitter, FaWhatsapp } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaGithub, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 
 const Main = () => {
   return (
@@ -13,16 +14,24 @@ const Main = () => {
     back-end technologies </p>
     <div className='flex justify-between gap-4 text-[#5651e5] items-center max-w-[330px] m-auto py-4'>
    <div className='rounded-full  shadow-lg shadow-gray-400 p-4 hover:scale-105 ease-in duration-900'>
+    <Link href='https://www.linkedin.com/in/manoj-kumar-2805b2262/'>
     <FaLinkedin size={30}/>
+    </Link>
    </div>
    <div className='rounded-full shadow-lg shadow-gray-400 p-4 hover:scale-105 ease-in duration-900'>
+   <Link href='https://instagram.com/manojkumar38810?igshid=YmMyMTA2M2Y='>
     <FaInstagram size={30}/>
+    </Link>
    </div>
    <div className='rounded-full shadow-lg shadow-gray-400 p-4 hover:scale-105 ease-in duration-900'>
-    <FaWhatsapp size={30}/>
+    <Link href='https://github.com/mk3638432'>
+    <FaGithub size={30}/>
+    </Link>
    </div>
    <div className='rounded-full shadow-lg shadow-gray-400 p-4 hover:scale-105 ease-in duration-900'>
+    <Link href='https://twitter.com/manoj77050?t=B0lKIQLGD4XT3pntnxi0nQ&s=09'>
     <FaTwitter size={30}/>
+    </Link>
    </div>
     </div>
         </div>

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
-import {FaLinkedin , FaInstagram , FaWhatsapp ,FaTwitter} from 'react-icons/fa'
+import {FaLinkedin , FaInstagram , FaGithub ,FaTwitter} from 'react-icons/fa'
 import { useEffect, useState } from "react"
 
 const Navbar = () => {
@@ -89,10 +89,15 @@ const Navbar = () => {
         <p className="font-bold text-center text-[#5651e5] uppercase">Let's Connect</p>
         <div>
             <div className="rounded-full flex justify-evenly text-[#5651e5] shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500">
-            <FaLinkedin/>
-            <FaInstagram/>
+                <Link href='https://www.linkedin.com/in/manoj-kumar-2805b2262'> 
+                 <FaLinkedin/>
+ </Link>
+            <Link href='https://instagram.com/manojkumar38810?igshid=YmMyMTA2M2Y='>  <FaInstagram/> </Link>
+            <Link href='https://twitter.com/manoj77050?t=B0lKIQLGD4XT3pntnxi0nQ&s=09'>
             <FaTwitter/>
-            <FaWhatsapp/>
+            </Link>
+            <Link href='https://github.com/mk3638432' >     <FaGithub/></Link>
+        
             </div>
      
         </div>
